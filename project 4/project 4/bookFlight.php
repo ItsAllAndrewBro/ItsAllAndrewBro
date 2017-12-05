@@ -44,21 +44,20 @@
           </select>
           <p><h3><b>Seating Information</b></h3></p>
           <label for="numberOfTickets">Number of Tickets:<input type="text" name="numberOfTickets">
-            <lable for="firtClass">First Class:
-              <input type="checkbox" name="firstClass" value="A1">A1
-              <input type="checkbox" name="firstClass" value="A2">A2
-              <input type="checkbox" name="firstClass" value="A3">A3
-
-              <lable for="economy">Economy:
-                <input type="checkbox" name="economy" value="B1">B1
-                <input type="checkbox" name="economy" value="B2">B2
-                <input type="checkbox" name="economy" value="B3">B3
-
-                <lable for="coach">Coach:
-                  <input type="checkbox" name="coach" value="C1">C1
-                  <input type="checkbox" name="coach" value="C2">C2
-                  <input type="checkbox" name="coach" value="C3">C3
-                  <input type="checkbox" name="coach" value="C4">C4
+            <p><h3><b>Type of Seat</b></h3></p>
+              <select name="seat" required>
+                <option value=""> </option>
+                <option value="FC-1">FC-1</option>
+                <option value="FC-2">FC-2</option>
+                <option value="FC-3">FC-3</option>
+                <option value="E-1">E-1</option>
+                <option value="E-2">E-2</option>
+                <option value="E-3">E-3</option>
+                <option value="C-1">C-1</option>
+                <option value="C-2">C-2</option>
+                <option value="C-3">C-3</option>
+                <option value="C-4">C-4</option>
+              </select>
       <br>
         <p><h3><b>Destination Airport</b></h3></p>
          </select>
@@ -97,21 +96,20 @@
             </select>
             <p><h3><b>Seating Information</b></h3></p>
             <label for="numberOfTickets">Number of Tickets:<input type="text" name="numberOfTickets">
-                <lable for="firtClass">First Class:
-                  <input type="checkbox" name="firstClass" value="A1">A1
-                  <input type="checkbox" name="firstClass" value="A2">A2
-                  <input type="checkbox" name="firstClass" value="A3">A3
-
-                  <lable for="economy">Economy:
-                    <input type="checkbox" name="economy" value="B1">B1
-                    <input type="checkbox" name="economy" value="B2">B2
-                    <input type="checkbox" name="economy" value="B3">B3
-
-                    <lable for="coach">Coach:
-                      <input type="checkbox" name="coach" value="C1">C1
-                      <input type="checkbox" name="coach" value="C2">C2
-                      <input type="checkbox" name="coach" value="C3">C3
-                      <input type="checkbox" name="coach" value="C4">C4
+              <p><h3><b>Type of Seat</b></h3></p>
+                <select name="seat" required>
+                  <option value=""> </option>
+                  <option value="FC-1">FC-1</option>
+                  <option value="FC-2">FC-2</option>
+                  <option value="FC-3">FC-3</option>
+                  <option value="E-1">E-1</option>
+                  <option value="E-2">E-2</option>
+                  <option value="E-3">E-3</option>
+                  <option value="C-1">C-1</option>
+                  <option value="C-2">C-2</option>
+                  <option value="C-3">C-3</option>
+                  <option value="C-4">C-4</option>
+                </select>
         <br>
           <p><h3><b>Destination Airport</b></h3></p>
            </select>
