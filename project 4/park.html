@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Parking garage charges</title>
+    <meta  charset="utf-8">
+    <script type="text/javascript" >
+      function calcParkingCharge(value) {
+        var hour=parseInt(value);
+        var tot=5;
+        if (hour<=2)
+          tot=5;
+        else {
+          tot=5+(3*(hour-2));
+        }
+
+        var total = document.createElement("div");  // Creates a new <div> node
+        total.textContent = "$" + tot.toString() + ".00";         // Sets the text content
+        document.body.appendChild(total);
+    }
+    </script>
+</head>
+
+<body>
+  <h1>Parking Payment</h1>
+  <p>$3.00 per hour. Minimum fee of $5. First 2 hours are free.</p>
+  <input type="button" value="Calculate" onclick="calcParkingCharge(document.getElementById('parkingHours').value)"/>
+  <input type="text" id="parkingHours"/>
+  <br><br>
+  <h3>Your total:</h3>
+</body>
+
+</html>

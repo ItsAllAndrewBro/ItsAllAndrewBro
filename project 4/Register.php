@@ -5,6 +5,7 @@
   <h1> Registration Page</h1>
 
   <form action="controlRegister.php" method="post">
+    <p id=swag></p>
 First Name: <input type="text" name="fname"><br>
 Last Name: <input type="text" name="lname"><br>
 Password: <input type="password" name="password"><br>

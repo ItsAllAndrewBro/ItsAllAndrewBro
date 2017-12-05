@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$user = "user12";
-$pass = "user12";
-$db = "mydb";
+$user = "atruong8";
+$pass = "atruong8";
+$db = "atruong8";
 
 function execute_query($query) {
 

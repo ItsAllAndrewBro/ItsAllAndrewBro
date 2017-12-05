@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$user = "user12";
-$pass = "user12";
-$db = "mydb";
+$user = "atruong8";
+$pass = "atruong8";
+$db = "atruong8";
 
 function execute_query($query) {
 
@@ -36,8 +36,23 @@ if (!$r2) {
 }
 
 
+
 $password=$_POST['password'];
 $email=$_POST['email'];
+$query= "SELECT Id FROM Customers WHERE email='$email' AND Pass='$password'";
+if(empty(trim($_POST["email"]))){
+        echo"Please enter email";
+    } else{
+        $username = trim($_POST["email"]);
+    }
+
+    // Check if password is empty
+    if(empty(trim($_POST['password']))){
+        echo "Please enter password";
+    } else{
+        $password = trim($_POST['password']);
+    }
+
 
 
 
