@@ -11,14 +11,15 @@
     $departTime = $_POST['departTime'];
 	  $departure = $_POST['departure'];
     //Compute totals.
+
     //$stock_total = $ipadair2 + $iphone6 + $imac;
     //Output totals.
     ?>
 <p>Itinerary</p>
 <table width="559" border="1" cellpadding="5" cellspacing="0">
   <tr>
-    <th width="120">Product</th>
-    <th width="400">Quantity</th>
+    <th width="120">Flight Item</th>
+    <th width="400">Deatails</th>
   </tr>
   <tr>
     <td>Departure Date</td>
@@ -38,20 +39,17 @@
   </tr>
   <tr>
     <td>Seating</td>
-    <td><?php print $firstClass; ?></td>
-    <td><?php print $economy; ?></td>
-    <td><?php print $coach; ?></td>
+    <td><?php print $seat; ?></td>
   </tr>
   <tr>
     <td colspan="3">&nbsp;</td>
   </tr>
   <tr>
-    <td >Total Items</td>
+    <td >Ticket Price</td>
     <td width="126"><?php print $stock_total; ?></td>
   </tr>
 </table>
-<br><br>
-
+<br>
 <link href="./ccStyle.css" rel="stylesheet">
 
 <script>
@@ -142,5 +140,6 @@
       </form>
     </div>
   </div>
+
 </body>
 </html>
