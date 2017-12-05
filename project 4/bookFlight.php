@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Flight Booking Form</title>
+    <script type="text/javascript" >
+      function calcParkingCharge(value) {
+        var hour=parseInt(value);
+        var tot=5;
+        if (hour<=2)
+          tot=5;
+        else {
+          tot=5+(3*(hour-2));
+        }
+
+        var total = document.createElement("div");  // Creates a new <div> node
+        total.textContent = "$" + tot.toString() + ".00";         // Sets the text content
+        document.body.appendChild(total);
+    }
+    </script>
   </head>
   <body>
     <form action="" method="GET">
@@ -115,6 +130,24 @@
               <option value="fl">Orlando, FL: Orlando International Airport</option>
             </select>
         </fieldset>
+        <br><br>
+        <h1>Choose a rental car:</h1>
+          <select name="cars">
+            <option value="suv">SUV</option>
+            <option value="compact">Compact</option>
+            <option value="midsize">Midsize</option>
+            <option value="luxury">luxury</option>
+          </select>
+          <br><br>
+          <input type="submit">
+
+          <h1>Parking Payment</h1>
+          <p>$3.00 per hour. Minimum fee of $5. First 2 hours are free.</p>
+          <input type="button" value="Calculate" onclick="calcParkingCharge(document.getElementById('parkingHours').value)"/>
+          <input type="text" id="parkingHours"/>
+          <br><br>
+          <h3>Your total:</h3>
       </form>
+
     </body>
 <html>
